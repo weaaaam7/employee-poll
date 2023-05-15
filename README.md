@@ -1,3 +1,15 @@
+# Reac-Redux Project for Udacity Nanodegree
+
+This project is created to get a nanodegree in React.
+Features:
+- Login
+- View Answered/Unanswered Polls
+- View Poll Questions Details
+- Voting
+- Create New Poll
+- View Employees Summary
+- Logout
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
