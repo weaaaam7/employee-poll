@@ -75,7 +75,7 @@ const DetailedQ = ({ userAuth, questions, users, dispatch }) => {
       <Card>
         <Card.Body>
           <div className="text-center">
-            <Image src={avatar} alt={question?.author} width="80" height="80"/>
+            <Image src={avatar} width="80" height="80"/>
             <Card.Title>Poll by {question?.author}</Card.Title>
             <Card.Text>Would you rather</Card.Text>
             {!answered && (
