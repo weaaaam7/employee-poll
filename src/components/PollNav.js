@@ -34,13 +34,13 @@ const PollNav = ({ name, dispatch }) => {
         </Link>
       </Nav.Item>
       <Nav.Item>
-        <Link to="/Overview" className="PollNav-link">
-          Overview
+        <Link to="/leaderboard" className="PollNav-link">
+          Leaderboard
         </Link>
       </Nav.Item>
       <Nav.Item>
-        <Link to="/New" className="PollNav-link">
-          New Question
+        <Link to="/add" className="PollNav-link">
+          Add Poll
         </Link>
       </Nav.Item>
 

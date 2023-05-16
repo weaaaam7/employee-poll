@@ -6,6 +6,7 @@ import { handleSaveQuestionAnswer } from "../actions/users";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import Image from "react-bootstrap/Image";
 
 const DetailedQ = ({ userAuth, questions, users, dispatch }) => {
   const [answered, setAnswered] = useState(false);
@@ -18,6 +19,7 @@ const DetailedQ = ({ userAuth, questions, users, dispatch }) => {
   const optionTwoVotes = question?.optionTwo.votes.length;
   const votesTotal = optionOneVotes + optionTwoVotes;
   const optionSelectedByUser = users[userAuth].answers[question?.id];
+  const avatar = users[question?.author]?.avatarURL;
 
   const calculatePercentage = (votes, total) => {
     return Math.floor((votes / total) * 100);
@@ -73,6 +75,7 @@ const DetailedQ = ({ userAuth, questions, users, dispatch }) => {
       <Card>
         <Card.Body>
           <div className="text-center">
+            <Image src={avatar} alt={question?.author} width="80" height="80"/>
             <Card.Title>Poll by {question?.author}</Card.Title>
             <Card.Text>Would you rather</Card.Text>
             {!answered && (

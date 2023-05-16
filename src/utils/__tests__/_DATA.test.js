@@ -20,7 +20,7 @@ describe("Save question", () => {
       author: "",
     };
     await expect(_saveQuestion(invalidQuestion)).rejects.toEqual(
-      "Please enter optionOneText, optionTwoText, and author"
+      "Please provide optionOneText, optionTwoText, and author"
     );
   });
 
@@ -30,7 +30,7 @@ describe("Save question", () => {
       author: "",
     };
     await expect(_saveQuestion(invalidQuestion)).rejects.toEqual(
-      "Please enter optionOneText, optionTwoText, and author"
+      "Please provide optionOneText, optionTwoText, and author"
     );
   });
 });
@@ -53,7 +53,7 @@ describe("save answer", () => {
       answer: "",
     };
     await expect(_saveQuestionAnswer(invalidAnswer)).rejects.toEqual(
-      "Please enter userAuth, qid, and answer"
+      "Please provide userAuth, qid, and answer"
     );
   });
 
@@ -63,7 +63,7 @@ describe("save answer", () => {
       qid: "",
     };
     await expect(_saveQuestionAnswer(invalidAnswer)).rejects.toEqual(
-      "Please enter userAuth, qid, and answer"
+      "Please provide userAuth, qid, and answer"
     );
   });
 });

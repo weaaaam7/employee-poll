@@ -21,8 +21,8 @@ const App = ({ userAuth, dispatch }) => {
           <PollNav />
           <Routes>
             <Route exact path="/" element={<DB />} />
-            <Route path="/Overview" element={<Overview />} />
-            <Route path="/New" element={<NewPoll />} />
+            <Route path="/leaderboard" element={<Overview />} />
+            <Route path="/add" element={<NewPoll />} />
             <Route path="/questions/:question_id" element={<DetailedQ />} />
             <Route path="/404" exact element={<Error />} />
             <Route path="*" element={<Error />} />
